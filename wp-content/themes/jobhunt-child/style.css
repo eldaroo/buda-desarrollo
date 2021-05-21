@@ -11,3 +11,528 @@ License URI:    http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain:    jobhunt-child
 Tags:           e-commerce, two-columns, left-sidebar, right-sidebar, custom-colors, custom-menu, featured-images, full-width-template, threaded-comments, rtl-language-support, footer-widgets, sticky-post, theme-options
 */
+
+    /*accesos externos*/
+    .sub-header-container{
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    .sub-header-column{
+        margin-right: 24px;
+        font-size: 24px;
+    }
+    .acceso-recruitem a{
+        color:lightsalmon;
+    }
+    .acceso-linkedin a{
+        color: lightskyblue;
+    }
+    .acceso-slack a{
+        color:rgb(255, 117, 186);
+    }
+    .acceso-socialtalent a{
+        color:rgb(113, 255, 113);
+    }
+    /*notas recruiters*/
+    .page-id-3235 .list-post-type .list-item .post-content h3{
+    pointer-events: none;
+    }
+    /*titulo de documentaciones*/
+    .page-id-3088 .widgettitle{
+    color:darkorange!important;
+    }
+    /*boton presentar*/
+    .btn-presentar{
+    border: 0px solid darkorange;
+    padding:10px;
+    border-radius:15px;
+    margin-top:20px!important;
+    text-decoration: underline;
+    color:darkorange;
+    }
+    .btn-presentar:hover{
+    color:darkviolet;
+    }
+    .btn-presentar::before{
+    content:'> ';
+    color:darkorange;
+    }
+    .btn-presentar:hover::before{
+    content:'> ';
+    color:darkviolet;
+    }
+    /*fix navegador handheld*/
+    .off-canvas-navigation-wrapper{
+        width: 100%!important;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+    /*color fondo banner porque buda*/
+    .jh-section.banners-block{
+    background-color:
+    #593866!important;
+    }
+    .jh-section.banners-block:hover{
+    background-color:
+    #e38d02!important;
+    }
+    
+    /*ocultando datos de formulario*/
+    #wpforms-3492-field_1-container, #wpforms-3492-field_2-container, #wpforms-3492-field_3-container, #wpforms-2986-field_5-container, #wpforms-2986-field_10-container, #wpforms-2986-field_4-container {display:none;}
+    /*tabla de recompensas*/
+    .post-3235 thead th{
+    background:darkorange;
+    color:white;
+    border:1px solid white;
+    }
+    .nav-tabs .nav-link.active{
+    background:darkorange;
+    color:white;
+    }
+    .nav-tabs .nav-link{
+    flex: 0 0 33%;
+    }
+    .nav-tabs{
+    justify-content:center;
+    }
+    /*GLOBALS*/
+    /*navegador mobile*/
+    button.navbar-toggler{
+    color:white!important;
+    padding:4px!important;
+    }
+    div.handheld-header{
+    flex-direction:row-reverse;
+    }
+    .off-canvas-navigation-wrapper.toggled{
+    left:0px!important;
+    position:absolute;
+    }
+    /*traductor*/
+    @media only screen and (max-width:640px){
+    .country-selector{display:none;}
+    }
+    .country-selector{
+    margin-right:50px;
+    margin-bottom:20px;
+    background:orange;
+    opacity:0.5;
+    padding:5px 10px;
+    border-radius:15px;
+    transition-duration:1s;
+    }
+    .country-selector a{
+    color:white!important;}
+    .country-selector:hover{
+    opacity:1;
+    transition-duration:1s;
+    box-shadow:1px 1px 5px 5px rgba(1,1,1,0.1);
+    }
+    /*Logo header*/
+    .custom-logo{
+    padding-left:15px;
+    width:60%;
+      image-rendering:crisp-edges;
+    }
+    /*footer*/
+    @media only screen (min-width:992px){
+        .footer-widget.footer-widget-3{
+            min-width:400px;
+            padding-right:0px;
+        }
+    }
+    /*scroll bar*/
+    *::-webkit-scrollbar-track
+    {
+      -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+      background-color: #F5F5F5;
+    }
+    *::-webkit-scrollbar
+    {
+      width: 10px;
+      background-color: #F5F5F5;
+    }
+    *::-webkit-scrollbar-thumb
+    {
+      background-color: #F90;
+      background-image: -webkit-linear-gradient(45deg,
+                                                rgba(255, 255, 255, .2) 25%,
+                            transparent 25%,
+                            transparent 50%,
+                            rgba(255, 255, 255, .2) 50%,
+                            rgba(255, 255, 255, .2) 75%,
+                            transparent 75%,
+                            transparent)
+    }
+    /*misiones - favoritos*/
+    .favoritos{
+    position:relative;
+    display:flex;
+    flex-flow:wrap;
+    }
+    .favorito{
+    position:relative;
+    margin:10px;
+    padding:10px 15px;
+    border:2px solid darkorange;
+    border-radius:15px;
+    max-width:200px;
+    }
+    .favorito h3{
+    color:darkorange;
+    font-size:1rem;
+    margin-bottom:0;
+    }
+    .simplefavorite-button.active,.simplefavorite-button{
+    padding:2px 5px;
+    border-radius:5px;
+    width:100%;
+    transition:.2s;
+    }
+    .simplefavorite-button.active:hover,.simplefavorite-button.active:hover i {
+    background:#dd0000!important;
+    color:white!important;
+    transition:.2s;
+    border-color:#dd0000!important;
+    }
+    .simplefavorite-button:hover{
+    font-weight:bold;
+    transition:.2s;
+    }
+    .simplefavorite-button:hover i {
+    font-weight:bold;
+    transition:.2s;
+    }
+    /*boton volver*/
+    .back-button{
+    border-color:darkviolet;
+    color:darkviolet;
+    background-color:rgba(200,255,255,0.2);
+    font-weight:bold;
+    transition:0.2s;
+    }
+    .back-button:hover{
+    background:darkviolet;
+    border-color:darkviolet;
+    transition:0.2s;
+    }
+    /*boton ver busquedas*/
+    .ver-busqueda{
+    border-color:darkorange;
+    text-decoration:underline;
+    color:darkorange;
+    font-weight:bold;
+    transition:0.2s;
+    }
+    .button.ver-busqueda:hover{
+    background:darkviolet;
+    border-color:darkviolet;
+    color:white;
+    transition:0.2s;
+    }
+    /*anular todas las misiones*/
+    .simplefavorites-clear{
+    background:darkred;
+    padding:10px 18px;
+    border-radius:5px;
+    border-color:white;
+    color:white;
+    }
+    /*busquedas activas*/
+    .page-id-507 .job_listings.list{
+    max-height:75vh;
+    overflow-y:scroll;
+    overflow-x:hidden;
+    padding:20px;
+    }
+    .page-id-507 .job_listings .search_location{
+    display:none;
+    }
+    .page-id-507 .job_listings .search_categories{
+    flex: 0 0 50%;
+        max-width: 50%;
+    }
+    .page-id-507 .job_listings .search_categories select{
+    height:auto;
+    }
+    /* DASHBOARD */
+    /*mi cuenta woocommerce*/
+    .woocommerce-MyAccount-content p:last-child,.woocommerce-MyAccount-content p:nth-child(3){
+    display:none;
+    }
+    .woocommerce-MyAccount-content form p{
+    display:block!important;
+    }
+    .woocommerce-MyAccount-navigation ul li:nth-child(1),.woocommerce-MyAccount-navigation ul li:nth-child(2),.woocommerce-MyAccount-navigation ul li:nth-child(3),.woocommerce-MyAccount-navigation ul li:nth-child(4){
+    display:none;
+    }
+    /*MAIN PAGE*/
+    @media (min-width:992px){
+    .page-id-2647{
+    overflow:hidden!important;
+    }
+    .page-id-2647 .site-header.header-v1 {
+    display:none;
+    }
+    .page-id-2647 footer{
+    display:none;
+    }
+    }
+    .page-id-2647 .wppb-alert{
+    display:none;
+    }
+    .page-id-2647 h1{
+    margin-top:0;
+    }
+    /*IFRAME*/
+    #iframe-dashboard{
+    height:85.7vh;
+    border:3px solid #ff6600;
+    padding:0;
+    margin:0;
+    border-radius:15px;
+    }
+    
+    /* JOBS - Buda / Admin / Employer */
+    /*Oculta Menu WooCommerce*/
+    div#job-manager-job-dashboard nav.woocommerce-MyAccount-navigation{
+    display:none;
+    }
+    /*Fix Job-Dashboard Ancho completo*/
+      @media (min-width: 992px) {
+        .woocommerce-active.logged-in .job-manager-job-dashboard-content,
+        .woocommerce-active.logged-in .job-manager-company-dashboard-content,
+        .woocommerce-active.logged-in .resume-manager-candidate-dashboard,
+        .woocommerce-active.logged-in .job-manager-job-applications {
+          -webkit-box-flex: 0;
+              -ms-flex: 0 0 100%;
+                  flex: 0 0 100%;
+          max-width: 100%; } }
+    /*ARCHIVES*/
+    /*JOBS*/
+    /*Ocultar Empresas*/
+    @media (min-width:0px) and (max-width:4000px){
+    .job_listings.list .job_listing .job-listing-company-logo, .job_listings.list .job_listing .company{
+    display:none!important;
+    }
+    }
+    /*SINGLE*/
+    /*JOB*/
+    /*ocultar Job-Single Aside*/
+    /*.single-job-listing__sidebar-area{
+    display:none;
+    }*/ /*style 2*/
+    
+    /*Fix Job-Sinlge Ancho Completo*/
+    /*.single-job-listing__inner > .single-job-listing__content-area {
+        position: relative;
+        width: 100%;
+        padding-right: 45px;
+        padding-left: 45px;
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 66.6666666667%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }*/ /*style 2*/
+    /*Oculatar Boton Solicitar*/
+    input.application_button {
+    display:none;
+    }
+    /*Ocultar Nombre Empresa Header*/
+    .job_listing-template-default .company{
+    display:none!important;
+    } /*style 1*/
+    /*.job_listing-template-default .site-content-page-header-inner{
+    display:none!important;
+    }*/ /*style 2*/
+         *
+    
+    /*LANDING*/
+    /*Hero Header*/
+    .home .site-content-page-header{background-repeat: no-repeat;
+      background-size: cover;
+    background-position: center center;
+    max-height:800px!important;
+    height:100vh;
+    margin-bottom:40px!important;
+    }
+    /*para todos los sitios hero*/
+    .site-content-page-header{
+    margin-bottom:5px!important;
+    }
+    .home .site-content-page-header .site-content-page-header-inner{
+    padding-top:40px;
+    padding-bottom:80px;
+    }
+    .jh-scroll-to{
+    padding-top:10em;
+    }
+    .jh-scroll-to a{
+    /*display:none;*/
+    width:100px!important;
+    height:100px!important;
+    }
+    .jh-scroll-to i{
+    }
+    /*Texto cabezara*/
+    .home header .job-search-form .job-search-location{
+    display:none;
+    }
+    @media only screen and (min-width:992px){
+    .home header h3.section-title{
+    padding-top:.6em;
+    font-size:4em!important;
+    }
+    .home header .section-header{
+    padding-bottom:2em;
+    }
+    }
+    @media only screen and (max-width:992px){
+    .home header h3.section-title{
+    font-size:3em!important;
+    }
+    .jh-scroll-to{
+    padding-top:5em;
+    }
+    }
+    @media only screen and (max-width:642px){
+    .home header h3.section-title{
+    font-size:2em!important;
+    }
+    }
+    /*secciones*/
+    div.site-content h3.section-title{
+    color:#FFA500!important;
+    }
+    div.site-content div.banners-block-inner h3.section-title {
+    color:white!important;
+    }
+    /*Companies carrousel*/
+    .companies-carrousel a{
+    pointer-events: none;
+    }
+    
+    /*DOCUMENTACION*/
+    .single-wpdmpro .site-content-page-header{
+    display:none;
+    }
+    
+    /*FORMULARIOS DASHBOARD*/
+    /*Solicitud de Informacion*/
+    .register-date{
+    display:none;
+    }
+    .user-email{
+    display:none;
+    }
+    
+    /*SLIDER CONTACTOS*/
+    #slider-contactos{
+    left:0!important;
+    padding-left:0px!important;
+    padding-right:0px !important;
+    margin-left:0px!important;
+    margin-right:0px!important;
+    }
+    #slider-contactos .slide-empresa{
+    width:100%!important;
+    height:200px!important;
+    }
+    #slider-contactos .slide-recruiter{
+    width:100%!important;
+    height:200px!important;
+    }
+    .owl-wrapper{
+    width:200%!important;
+    }
+    .owl-item{
+    width:50%!important;
+    }
+    
+    /*TRABAJAR CON BUDA*/
+    .page-id-1355 header.site-content-page-header{
+    background:url('https://budait.com/wp-content/uploads/2021/04/trabajar-header.png');
+    background-size:cover;
+    background-position: center center;
+    height:50vh;
+    color:white;
+    }
+    .page-id-1355 header.site-content-page-header .site-content-page-header-inner{
+    padding-right:0px!important;
+    padding-left:0px!important;
+    }
+    .page-id-1355 header.site-content-page-header a,.page-id-1355 header.site-content-page-header h1{
+    color:white;
+    }
+    .page-id-1355 header.site-content-page-header h1{
+    font-size:2em;
+    }
+    /*CONTACTANOS*/
+    .page-id-1364 header.site-content-page-header{
+    background:url('https://budait.com/wp-content/uploads/2021/04/Mesa-de-trabajo-42.png');
+    background-size:cover;
+    background-position: center center;
+    height:50vh;
+    color:white;
+    }
+    .page-id-1364 header.site-content-page-header .site-content-page-header-inner{
+    padding-right:0px!important;
+    padding-left:0px!important;
+    }
+    .page-id-1364 header.site-content-page-header a,.page-id-1364 header.site-content-page-header h1{
+    color:white;
+    }
+    .page-id-1355 header.site-content-page-header h1{
+    font-size:2em;
+    }
+    /*BLOG*/
+    .page-id-3059 header.site-content-page-header{
+    background:url('https://budait.com/wp-content/uploads/2021/04/Mesa-de-trabajo-2.png');
+    background-size:cover;
+    background-position: center center;
+    height:50vh;
+    color:white;
+    }
+    .page-id-3059 header.site-content-page-header .site-content-page-header-inner{
+    padding-right:0px!important;
+    padding-left:0px!important;
+    }
+    .page-id-3059 header.site-content-page-header a,.page-id-3059 header.site-content-page-header h1{
+    color:white;
+    }
+    .page-id-3059 header.site-content-page-header h1{
+    font-size:2em;
+    }
+    .page-id-3059 .entry-content ul li a{
+     color:orange;
+     font-size:1.2em;
+    }
+    /*entrada de blog*/.post-template-default.single.single-post header.site-content-page-header{
+    background-color:rgba(100,0,255,0.1);
+    }
+    @media only screen and (min-width:992px){
+    .post-template-default.single.single-post header.site-content-page-header{background:url('https://budait.com/wp-content/uploads/2021/04/Mesa-de-trabajo-2-1.png');
+    background-size:cover;
+    background-position: center center;
+    background-blend-mode:soft-light;
+    height:25vh;
+    background-color:rgba(100,0,255,0.1);
+    }
+    }
+    .post-template-default.single.single-post .site-content-page-subtitle{display:none;}
+    .post-template-default.single.single-post header.site-content-page-header h1{
+    color:orange;
+    }
+    
+    /*JOBS LISTING*/
+    .post-type-archive-job_listing header.site-content-page-header,.single-job_listing header.site-content-page-header{
+    background:url('https://budait.com/wp-content/uploads/2021/04/Mesa-de-trabajo-3.png');
+    background-size:cover;
+    background-position: center center;
+    height:40vh;
+    padding-top:10px;
+    }
+    .post-type-archive-job_listing header.site-content-page-header .site-content-page-header-inner,.single-job_listing header..site-content-page-header .site-content-page-header-inner{
+    align-items: top!important;
+    }

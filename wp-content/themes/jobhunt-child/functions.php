@@ -16,10 +16,26 @@ function jobhunt_site_content_header() {
 					$current_user = wp_get_current_user();
 					if ( ($current_user instanceof WP_User) ) {
 							?>
-						<div class="">
-						<p class="">
-							Me exita el git
-						</p>
+						<div class="tour-container">
+							
+						</div>
+						<div class="sub-header-container" id="accesosDashboard">
+							<div class="sub-header-column">
+								<p class="acceso-link acceso-linkedin">
+									<a href="https://www.linkedin.com/" target="_blank"><i class="fab-linkedin"></i><span> LinkedIn</span></a>
+								</p>
+								<p class="acceso-link acceso-slack">
+									<a href="https://budait.slack.com/ssb/redirect?entry_point=homepage_nav" target="_blank"><i class="fab-slack"></i><span> Slack</span></a>
+								</p>
+							</div>
+							<div class="sub-header-column">
+								<p class="acceso-link acceso-recruitem">
+									<a href="https://recruitin.net/" target="_blank"><i class="fab fa-resolving"></i><span> Recruit'em</span></a>
+								</p>
+								<p class="acceso-link acceso-socialtalent">
+									<a href="https://app.socialtalent.com/" target="_blank"><i class="fas fa-user-ninja"></i><span> Social Talent</span></a>
+								</p>
+							</div>
 						</div>
 						<?php    
 					}
