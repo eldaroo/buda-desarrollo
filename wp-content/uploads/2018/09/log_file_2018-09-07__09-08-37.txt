@@ -1,0 +1,79 @@
+
+---Downloaded files---
+The import files for: Jobhunt were successfully downloaded!
+Initial max execution time = 30
+Files info:
+Site URL = https://demo.madrasthemes.com/jobhunt-without-core-addon-bundle
+Data file = /var/www/demo.madrasthemes.com/public_html/wp-content/themes/jobhunt/assets/dummy-data/demo-without-core-addon-bundle/dummy-data.xml
+Widget file = /var/www/demo.madrasthemes.com/public_html/wp-content/themes/jobhunt/assets/dummy-data/demo-without-core-addon-bundle/widgets.wie
+Customizer file = not defined!
+Redux files:
+jobhunt_options -> /var/www/demo.madrasthemes.com/public_html/wp-content/themes/jobhunt/assets/dummy-data/demo-without-core-addon-bundle/redux-options.json 
+
+
+---pt-ocdi/before_content_import---
+
+
+---pt-ocdi/before_widgets_import---
+
+
+---Importing widgets---
+Sidebar : 
+
+Search - No Title - Imported
+Categories - No Title - Imported
+Jobhunt Recent Posts - Recent Posts - Imported
+Archives - No Title - Imported
+Meta - No Title - Imported
+Tag Cloud - Tags - Imported
+
+Footer Column 1 : 
+
+Jobhunt Footer Logo - No Title - Imported
+Text - No Title - Imported
+Jobhunt Social Links Menu - No Title - Imported
+
+Footer Column 2 : 
+
+Navigation Menu - Frequently Asked Questions - Imported
+
+Footer Column 3 : 
+
+Navigation Menu - Find Jobs - Imported
+
+Footer Column 4 : 
+
+Image - No Title - Imported
+Image - No Title - Imported
+
+Shop Sidebar : 
+
+Cart - Cart - Imported
+Product Search - No Title - Imported
+Product Categories - Product categories - Imported
+Filter Products by Price - Filter by price - Imported
+Products - Recent Products - Imported
+Tag Cloud - No Title - Imported
+
+Jobs Sidebar : 
+
+Jobhunt Job Search - No Title - Imported
+Jobhunt Job Location Search - No Title - Imported
+Jobhunt Job Date Filter - No Title - Imported
+Jobhunt Filter Job by Taxonomy - Job Type - Imported
+Jobhunt Filter Job by Taxonomy - Specialism - Imported
+
+Company Sidebar : 
+
+Jobhunt Company Search - No Title - Imported
+Jobhunt Company Location Search - No Title - Imported
+Jobhunt Filter Company by Taxonomy - Specialism - Imported
+Jobhunt Filter Company by Taxonomy - Team Size - Imported
+
+
+
+---Importing Redux settings---
+Redux settings import for: jobhunt_options finished successfully!
+
+---pt-ocdi/after_import---
+
