@@ -6,6 +6,32 @@
  * @package jobhunt-child
  */
 
+function jobhunt_site_content_header() {
+	if( apply_filters( 'jobhunt_show_site_content_header', true ) ) {
+		?><header class="site-content-page-header" <?php echo jobhunt_site_content_bg_image(); ?>>
+			<div class="site-content-page-header-inner">
+				<div class="page-title-area">
+					<?php jobhunt_site_content_page_title(); 
+					if ( is_user_logged_in() ) {
+					$current_user = wp_get_current_user();
+					if ( ($current_user instanceof WP_User) ) {
+							?>
+						<div class="">
+						<p class="">
+							Me exita el git
+						</p>
+						</div>
+						<?php    
+					}
+				}?>
+					
+				</div>
+			</div>
+		</header><?php
+	}
+}
+
+ // Agregar foto y nombre del usuario en el header de la version mobile
 function jobhunt_off_canvas_nav() {
 	if ( has_nav_menu( 'handheld' ) ) {
 	?>
