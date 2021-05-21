@@ -13,7 +13,6 @@ function jobhunt_template_job_listing_company_details() {
 		if ( ($current_user instanceof WP_User) ) {
 				?>
 			<div class="job-listing-company company">
-			<?php the_company_name( '<strong>', '</strong> ' ); ?>
 			<?php the_company_tagline( '<span class="tagline">', '</span>' ); ?>
 			</div>
 			<?php    
