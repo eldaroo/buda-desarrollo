@@ -1,0 +1,84 @@
+div.ank-wpforms-frontend-container-full,
+div.ank-wpforms-frontend-container-full .ank-wpforms-frontend-table * {
+    background:none;
+    border-radius:0;
+    -webkit-border-radius:0;
+    -moz-border-radius:0;
+    float:none;
+    font-size:100%;
+    height:auto;
+    letter-spacing:normal;
+    list-style:none;
+    outline:none;
+    position:static;
+    text-decoration:none;
+    text-indent:0;
+    text-shadow:none;
+    text-transform:none;
+    width:auto;
+    visibility:visible;
+    overflow:visible;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -webkit-box-shadow:none;
+    -moz-box-shadow:none;
+    -ms-box-shadow:none;
+    -o-box-shadow:none;
+    box-shadow:none;
+}
+
+div.ank-wpforms-frontend-container-full{
+    margin-bottom: 24px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+div.ank-wpforms-frontend-container-full .ank-wpforms-frontend-table input[type="text"], input[type="search"] {
+    font-size: 16px;
+    padding: .375rem .75rem;
+}
+
+
+div.ank-wpforms-frontend-container-full .fixed-table-toolbar .dropdown-toggle{
+    display: inline-block;
+    font-size: 16px;
+}
+
+div.ank-wpforms-frontend-container-full .fixed-table-toolbar .fa {
+    font-size: 16px;
+}
+
+div.ank-wpforms-frontend-container-full .ank-wpforms-frontend-table th{
+    font-weight: 700;
+}
+
+div.ank-wpforms-frontend-container-full .ank-wpforms-frontend-table tr{
+    font-size: 16px;
+}
+
+div.ank-wpforms-frontend-container-full .ank-wpforms-frontend-table td{
+    padding: 5px;
+}
+
+div.ank-wpforms-frontend-container-full .ank-wpforms-frontend-table td mark {
+    background-color: #fcf8e3;
+    font-weight: 700;
+    color: black;
+    padding: .2em;
+}
+
+
+.bootstrap-table {
+    max-width: 100% !important;
+}
+
+.bootstrap-table .fixed-table-container .ank-wpforms-frontend-table {
+    width: 100% !important;
+    margin: 0!important;
+}
+
+

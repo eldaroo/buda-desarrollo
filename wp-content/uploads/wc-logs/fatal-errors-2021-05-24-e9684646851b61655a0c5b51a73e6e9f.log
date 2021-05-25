@@ -1,0 +1,4 @@
+2021-05-24T23:29:20+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in C:\wamp64\www\buda-desarrollo\wp-content\plugins\redux-framework\redux-core\inc\classes\class-redux-ajax-save.php on line 10
+
+2021-05-24T23:32:44+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in C:\wamp64\www\buda-desarrollo\wp-includes\wp-db.php on line 2056
+
