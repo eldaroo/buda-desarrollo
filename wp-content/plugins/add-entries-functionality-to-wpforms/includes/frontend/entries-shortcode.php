@@ -41,6 +41,10 @@ class Ank_WPForms_Shortcode
     /**
      * @var bool
      */
+    private $showUserEntries = true;
+    /**
+     * @var bool
+     */
     private $showColumns = false;
     /**
      * @var false|string[]
@@ -79,6 +83,7 @@ class Ank_WPForms_Shortcode
                 'exclude_field_ids' => '', // comma separated field IDs to be exclude from table
                 'pagination' => '', // Flag to turn on/off pagination
                 'show_entry_date' => '', // Flag to show entry date
+                'show_user_entries' => '', // Flag to show only user entries
             ), $atts);
 
         if (empty($atts['id'])) {
@@ -89,6 +94,10 @@ class Ank_WPForms_Shortcode
 
         if (strtolower($atts['search']) === 'yes') {
             $this->searchEnabled = true;
+        }
+
+        if (strtolower($atts['show_user_entries']) === 'no') {
+            $this->showUserEntries = false;
         }
 
         if (strtolower($atts['show_columns']) === 'yes') {
@@ -269,8 +278,21 @@ class Ank_WPForms_Shortcode
 
         $content .= '<tbody>';
         $rows = '';
-        foreach ($this->entries as $entry_rows) {
-            $rows .= $this->create_entry_row($entry_rows);
+        if ( is_user_logged_in() ) {
+            $current_user = wp_get_current_user();
+                
+            foreach ($this->entries as $entry_rows) {
+                if ($this->showUserEntries) {
+                    if ($entry_rows['2email'] === $current_user->user_email) {
+                        $rows .= $this->create_entry_row($entry_rows);
+                    }
+                } else {
+                    $rows .= $this->create_entry_row($entry_rows);
+                }
+                
+            }
+        } else {
+            $rows .= "private";
         }
         $content .= $rows;
         $content .= '</tbody></table></div>';
